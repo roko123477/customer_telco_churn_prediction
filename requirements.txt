@@ -1,16 +1,8 @@
-﻿absl-py==1.0.0
-astunparse==1.6.3
-cachetools==5.0.0
-certifi==2021.10.8
-charset-normalizer==2.0.12
 click==8.0.4
 colorama==0.4.4
 Flask==2.0.3
 flatbuffers==2.0
 gast==0.5.3
-google-auth==2.6.0
-google-auth-oauthlib==0.4.6
-google-pasta==0.2.0
 grpcio==1.44.0
 gunicorn==20.1.0
 h5py==3.6.0
@@ -26,7 +18,6 @@ MarkupSafe==2.1.0
 numpy==1.22.2
 oauthlib==3.2.0
 opt-einsum==3.3.0
-pandas==1.4.1
 protobuf==3.19.4
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
