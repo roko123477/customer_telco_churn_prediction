@@ -1,9 +1,6 @@
 from operator import ge
 from flask import Flask,render_template, request
 import numpy as np
-import pandas as pd
-import tensorflow as tf
-from tensorflow import keras
 from keras.models import load_model
 
 app=Flask(__name__)
