@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Customer Churn Prediction</title>
+</head>
+<body>
+  <div class="center">
+        <h1>Customer Churn Prediction</h1>
+        <form action="/sub" method="POST">
+          <div class="inputbox">
+            <label class="gen">Gender</label>
+            <select name="gender" class="common">
+                <option name="gender" value=0>Male<option/>
+                <option name="gender" value=1>Female<option/>
+            </select>
+          </div>
+
+          <div class="inputbox">
+            <label class="gen">SeniorCitizen</label>
+            <select name="SeniorCitizen" class="common">
+                <option name="SeniorCitizen" value=0>0<option/>
+                <option name="SeniorCitizen" value=1>1<option/>
+            </select>
+          </div>
+
+          <div class="inputbox">
+            <label class="gen">Partner</label>
+            <select name="Partner" class="common">
+                <option name="Partner" value=1>Yes<option/>
+                <option name="Partner" value=0>No<option/>
+            </select>
+          </div>
+
+          <div class="inputbox">
+            <label class="gen">Dependents</label>
+            <select name="Dependents" class="common">
+                <option name="Dependents" value=1>Yes<option/>
+                <option name="Dependents" value=0>No<option/>
+            </select>
+          </div>
+
+          <div class="inputbox">
+            <label class="gen" name="tenure">Tenure(between:1-72)</label>
+            <input type="text" name="tenure" required="required">
+          </div>
+
+          <div class="inputbox">
+            <label class="gen">PhoneService</label>
+            <select name="PhoneService" class="common">
+                <option name="PhoneService" value= 1>Yes<option/>
+                <option name="PhoneService" value= 0>No<option/>
+            </select>
+          </div>
+          
+          <div class="inputbox">
+            <label class="gen">PhoneService</label>
+            <select name="PhoneService" class="common">
+                <option name="PhoneService" value=1>Yes<option/>
+                <option name="PhoneService" value=0>No<option/>
+            </select>
+          </div>
+          
+
+            <div class="inputbox">
+            <label class="gen">MultipleLines</label>
+            <select name="MultipleLines" class="common">
+                <option name="MultipleLines" value=1>Yes<option/>
+                <option name="MultipleLines" value=0>No<option/>
+            </select>
+          </div>
+          
+
+            <div class="inputbox">
+            <label class="gen">OnlineSecurity</label>
+            <select name="OnlineSecurity" class="common">
+                <option name="OnlineSecurity" value=1>Yes<option/>
+                <option name="OnlineSecurity" value=0>No<option/>
+            </select>
+          </div>
+          
+
+            <div class="inputbox">
+            <label class="gen">InternetService</label>
+            <select name="InternetService" class="common">
+                <option name="InternetService" value="DSL">DSL<option/>
+                <option name="InternetService" value="Fiber optic">Fiber optic<option/>
+                <option name="InternetService" value="No">No<option/>
+            </select>
+          </div>
+    
+            <div class="inputbox">
+            <label class="gen">OnlineSecurity</label>
+            <select name="OnlineSecurity" class="common">
+                <option name="OnlineSecurity" value=1>Yes<option/>
+                <option name="OnlineSecurity" value=0>No<option/>
+            </select>
+          </div>
+
+            <div class="inputbox">
+            <label class="gen">OnlineBackup</label>
+            <select name="OnlineBackup" class="common">
+                <option name="OnlineBackup" value=1>Yes<option/>
+                <option name="OnlineBackup" value=0>No<option/>
+            </select>
+          </div>
+
+            <div class="inputbox">
+            <label class="gen">DeviceProtection</label>
+            <select name="DeviceProtection" class="common">
+                <option name="DeviceProtection" value=1>Yes<option/>
+                <option name="DeviceProtection" value=0>No<option/>
+            </select>
+          </div>
+
+            <div class="inputbox">
+            <label class="gen">TechSupport</label>
+            <select name="TechSupport" class="common">
+                <option name="TechSupport" value=1>Yes<option/>
+                <option name="TechSupport" value=0>No<option/>
+            </select>
+          </div>
+
+            <div class="inputbox">
+            <label class="gen">StreamingTV</label>
+            <select name="StreamingTV" class="common">
+                <option name="StreamingTV" value=1>Yes<option/>
+                <option name="StreamingTV" value=0>No<option/>
+            </select>
+          </div>
+
+            <div class="inputbox">
+            <label class="gen">StreamingMovies</label>
+            <select name="StreamingMovies" class="common">
+                <option name="StreamingMovies" value=1>Yes<option/>
+                <option name="StreamingMovies" value=0>No<option/>
+            </select>
+          </div>
+
+            <div class="inputbox">
+            <label class="gen">PaperlessBilling</label>
+            <select name="PaperlessBilling" class="common">
+                <option name="PaperlessBilling" value=1>Yes<option/>
+                <option name="PaperlessBilling" value=0>No<option/>
+            </select>
+          </div>
+
+            <div class="inputbox">
+            <label class="gen">Contract</label>
+            <select name="Contract" class="common">
+                <option name="Contract" value="Month-to-month">Month-to-month<option/>
+                <option name="Contract" value="One year">One year<option/>
+                <option name="Contract" value="Two year">Two year<option/>
+            </select>
+          </div>
+          
+            <div class="inputbox">
+            <label class="gen">PaymentMethod</label>
+            <select name="PaymentMethod" class="common">
+                <option name="PaymentMethod" value="Electronic check">Electronic check<option/>
+                <option name="PaymentMethod" value="Mailed check">Mailed check<option/>
+                <option name="PaymentMethod" value="Bank transfer (automatic)">Bank transfer (automatic)<option/>
+                <option name="PaymentMethod" value="Credit card (automatic)">Credit card (automatic)<option/>
+            </select>
+          </div>
+
+            <div class="inputbox">
+            <label class="gen" >MonthlyCharges(between:18-118)</label>
+            <input type="text" name="MonthlyCharges" required="required">
+          </div>
+
+            <div class="inputbox">
+            <label class="gen">TotalCharges(between:18-8684)</label>
+            <input type="text" name="TotalCharges" required="required">
+          </div>
+
+            <div class="inputbox">
+            <button type="submit" name="submit" class="submit1">predict</button> 
+            </div>        
+        </form>
+  </div>
+</body>
+</html>
