@@ -7,7 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 250vh;
-  background: linear-gradient(45deg, rgb(236, 248, 65), rgb(250, 60, 85));
+  background: linear-gradient(45deg, rgb(105, 105, 104), rgb(199, 198, 198));
   font-family: "Sansita Swashed", cursive;
 }
 .center {
